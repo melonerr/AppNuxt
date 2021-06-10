@@ -2,9 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title text-upper">
-        Home
-      </h1>
+      <h1 class="title">Users</h1>
       <LinkNuxt />
     </div>
   </div>
@@ -14,3 +12,4 @@
 import Custom from '@/components/style/custom.vue'
 export default {}
 </script>
+

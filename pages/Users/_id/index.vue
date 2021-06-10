@@ -2,9 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title text-upper">
-        Home
-      </h1>
+      <h1 class="title">User_id: {{ $route.params.id }}</h1>
       <LinkNuxt />
     </div>
   </div>
@@ -12,5 +10,9 @@
 
 <script>
 import Custom from '@/components/style/custom.vue'
-export default {}
+export default {
+  validate(data) {
+    return /^\d+$/.test(data.params.id)
+  },
+}
 </script>

@@ -2,9 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title text-upper">
-        Home
-      </h1>
+      <h1 class="title">Admin</h1>
       <LinkNuxt />
     </div>
   </div>
