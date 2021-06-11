@@ -1,8 +1,57 @@
 <template>
   <div>
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light
+        bg-light
+        box-shadow
+        bg-white
+        sticky-top
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img src="~assets/img/jrdream-logo.png" width="40px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          @click.prevent="showDropDownMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page">Home</a>
+            <a class="nav-link">Features</a>
+            <a class="nav-link">Pricing</a>
+            <a class="nav-link">Disabled</a>
+            <a class="nav-link">
+              <b-navbar-nav class="ml-auto">
+                <b-nav-item-dropdown text="USER">
+                  <b-dropdown-item href="#">Profile</b-dropdown-item>
+                  <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+                </b-nav-item-dropdown>
+              </b-navbar-nav>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <Nuxt />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    showDropDownMenu() {
+      var element = document.getElementById('navbarNavAltMarkup')
+      element.classList.toggle('collapse')
+    },
+  },
+}
+</script>
 
 <style>
 html {
@@ -141,5 +190,12 @@ html {
 .button--dark:hover {
   color: #fff;
   background-color: #23272b;
+}
+
+.box-shadow {
+  box-shadow: 0 0 18px 0 rgb(0 0 0 / 33%);
+}
+.bg-white {
+  background-color: white;
 }
 </style>
