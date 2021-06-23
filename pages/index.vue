@@ -1,9 +1,10 @@
 <template>
   <div>
     <div class="container-fluid pl-0 pr-0">
+      <!-- <Header/> -->
       <Carousel />
     </div>
-    <div class="container">
+    <!-- <div class="container">
       <div>
         <Logo />
         <h1 class="title text-upper">Home</h1>
@@ -36,35 +37,36 @@
         <h6>Toast</h6>
         <Toast />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import Custom from '@/components/style/custom.vue'
+// import Header from '@/components/include/Header.vue'
+// import Custom from '@/components/style/custom.vue'
 import Carousel from '/components/include/Carousel.vue'
-import Popover from '/components/include/Popover.vue'
-import Progress from '/components/include/Progress.vue'
-import Sidebar from '/components/include/Sidebar.vue'
-import Skeleton from '/components/include/Skeleton.vue'
-import Spinner from '/components/include/Spinner.vue'
-import Tab from '/components/include/Tab.vue'
-import Time from '/components/include/Time.vue'
-import Jumbotron from '/components/include/Jumbotron.vue'
-import Toast from '/components/include/Toast.vue'
-
+// import Popover from '/components/include/Popover.vue'
+// import Progress from '/components/include/Progress.vue'
+// import Sidebar from '/components/include/Sidebar.vue'
+// import Skeleton from '/components/include/Skeleton.vue'
+// import Spinner from '/components/include/Spinner.vue'
+// import Tab from '/components/include/Tab.vue'
+// import Time from '/components/include/Time.vue'
+// import Jumbotron from '/components/include/Jumbotron.vue'
+// import Toast from '/components/include/Toast.vue'
 export default {
   components: {
+    // Header,
     Carousel,
-    Popover,
-    Progress,
-    Sidebar,
-    Skeleton,
-    Spinner,
-    Tab,
-    Time,
-    Jumbotron,
-    Toast,
+    // Popover,
+    // Progress,
+    // Sidebar,
+    // Skeleton,
+    // Spinner,
+    // Tab,
+    // Time,
+    // Jumbotron,
+    // Toast,
   },
 }
 </script>
